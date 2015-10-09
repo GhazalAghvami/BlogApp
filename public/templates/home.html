@@ -1,0 +1,23 @@
+
+
+<div ng-controller="MainController as vm">
+  <div style="text-align: center;" ng-show="!vm.creatingPost">
+    <button type="button" class="btn btn-success" ui-sref="AddPost">New Post</button>
+  </div>
+
+  <div class="well container form-inline" style="text-align: center;" ng-show="vm.creatingPost">
+
+  </div>
+
+  <div ng-repeat="c in vm.posts">
+    <div class="well container">
+      <h4>{{c.name}}</h4>
+      <h4>{{c.subject}}</h4>
+      <h6>{{c.content}}</h6>
+
+    <a class="btn btn-warning" ui-sref="EditPost({id: c._id})">Edit</a>
+      <button type="button" class="btn btn-danger" ng-click="vm.deletePost(c)">Delete</button>
+      
+    </div>
+  </div>
+</div>

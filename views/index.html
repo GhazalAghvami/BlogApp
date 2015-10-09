@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="BlogApp">
+<head>
+	<title>Blog App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+
+	<ui-view></ui-view>
+<!-- libs -->
+<script src="/angular/angular.min.js"></script>
+<script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!--modules -->
+<script src="/javascript/app.js"></script>
+<!-- services/factories-->
+<script src="/javascript/services/PostService.js"></script>
+<script src="/javascript/services/PostFactory.js"></script>
+
+<!-- controllers-->
+<script src='/javascript/controllers/MainController.js'></script>
+<script src='/javascript/controllers/EditPostController.js'></script>
+<script src='/javascript/controllers/AddPostController.js'></script>
+</body>
+</html>

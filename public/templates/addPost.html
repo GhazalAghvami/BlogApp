@@ -1,0 +1,8 @@
+
+<form class="well container" ng-submit="vm.savePost();">
+  <input class="form-control" placeholder="Name..." ng-model="vm.addPost.name">
+  <input class="form-control" placeholder="Subject..." ng-model="vm.addPost.subject">
+  <input class="form-control" placeholder="Your Post..." ng-model="vm.addPost.content">
+  <button type="submit" class="btn btn-success">Submit</button>
+  <a class="btn btn-danger" ui-sref="Home">Cancel</a>
+</form>
